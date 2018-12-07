@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="665.0" prefWidth="568.0" style="-fx-background-color: #63ab9d;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.control.ControlFX2">
+   <children>
+      <GridPane alignment="CENTER" layoutX="73.0" layoutY="37.0" prefHeight="391.0" prefWidth="299.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="37.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="36.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="20.0" percentWidth="0.0" prefWidth="240.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="34.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="305.0" minHeight="10.0" prefHeight="305.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="201.0" prefWidth="255.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../view/assets/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="label" alignment="CENTER" prefHeight="42.0" prefWidth="174.0" styleClass="titulo" stylesheets="@application.css" text="Registro" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin></Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="226.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <JFXTextField focusColor="#6dc9b9" labelFloat="true" prefHeight="10.0" prefWidth="240.0" promptText="User" unFocusColor="#3ba589">
+                     <VBox.margin>
+                        <Insets bottom="13.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#6dc9b9" labelFloat="true" prefHeight="9.0" prefWidth="240.0" promptText="Password" unFocusColor="#3ba589">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin></JFXTextField>
+                  <JFXTextField focusColor="#6dc9b9" labelFloat="true" prefHeight="21.0" prefWidth="240.0" promptText="Mail" unFocusColor="#3ba589">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#6dc9b9" labelFloat="true" prefHeight="16.0" prefWidth="240.0" promptText="Postal Code" unFocusColor="#3ba589">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField focusColor="#6dc9b9" labelFloat="true" prefHeight="4.0" prefWidth="240.0" promptText="Street" unFocusColor="#3ba589">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <JFXButton id="button" fx:id="closeButton" onMouseClicked="#closeStage" stylesheets="@application.css" text="Cerrar" />
+               </children></VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

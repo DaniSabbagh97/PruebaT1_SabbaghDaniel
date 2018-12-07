@@ -1,0 +1,11 @@
+
+.button{
+	-fx-background-color: red;
+}
+.button:hover{
+		-fx-background-color: green;
+}
+.titulo{
+    -fx-font-family: 'Poiret One';
+    -fx-font-size: 40.0;   
+}
